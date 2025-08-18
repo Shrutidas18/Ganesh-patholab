@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Left Banner */
+.left-banner {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.banner-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Right Booking Panel */
+.booking-section {
+  flex: 1;
+  background-color: #eef4fb;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.booking-section h2 {
+  text-align: center;
+  color: #3B4CCA;
+}
+
+.search-bar {
+  display: flex;
+  margin-top: 15px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+  padding: 10px 15px;
+  background-color: #F4A261;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.or-text {
+  text-align: center;
+  margin: 15px 0;
+  color: #555;
+}
+
+.popular-btn {
+  width: 100%;
+  background-color: #3B4CCA;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.action-card {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+  margin: 0 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.action-card img {
+  width: 40px;
+  margin-bottom: 5px;
+}

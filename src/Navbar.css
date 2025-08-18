@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#3B4CCA; /* Blue background */
+  padding: 8px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-left .logo {
+  height: 60px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.contact-text {
+  font-weight: bold;
+}
+
+.icon-circle {
+  background-color: #5ED4C6; /* Yellow background */
+  color: black;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-number,
+.contact-email {
+  white-space: nowrap;
+}
