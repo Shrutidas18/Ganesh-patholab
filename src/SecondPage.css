@@ -1,47 +1,67 @@
-.second-page {
-  background-color: #fff7d1; /* Soft yellow like in your image */
-  padding: 40px 20px;
+.special-programs {
+  background-color: #FFF2D7;
+  padding: 50px 20px;
   text-align: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.section-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4b3832;
+.special-programs h2 {
+  color: #4B3832;
+  font-size: 28px;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
-.program-cards {
+/* Card Grid */
+.programs-grid {
   display: flex;
-  justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
+/* Card */
 .program-card {
-  background: white;
+  background: linear-gradient(135deg, #004AAD, #2E8BC0);
   border-radius: 12px;
-  padding: 15px;
+  padding: 20px;
   width: 160px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
 }
 
 .program-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
+/* Card Image */
 .program-card img {
   width: 80px;
   height: 80px;
+  margin-bottom: 12px;
   object-fit: contain;
-  border-radius: 50%;
-  background: #ffe15d;
-  padding: 10px;
 }
 
+/* Card Text */
 .program-card p {
-  margin-top: 10px;
+  color: #fff;
   font-weight: bold;
-  color: #004aad;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .program-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .program-card {
+    width: 100%;
+  }
 }
