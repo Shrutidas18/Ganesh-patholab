@@ -8,8 +8,8 @@ function Footer() {
       <div className="footer-card">
         <div className="footer-section">
           <h2 className="footer-title">PATHOLOGY LAB</h2>
-          <p>Call Us: <a href="tel:+912261700000">022-6170-0000</a></p>
-          <p>WhatsApp: <a href="https://wa.me/917208957933" target="_blank" rel="noreferrer">+91 7208957933</a></p>
+          <p>Call Us: <a href="tel:+912261700000">+91 9861118732/+91 9438743532</a></p>
+          <p>WhatsApp: <a href="https://wa.me/917208957933" target="_blank" rel="noreferrer">+91 9861118732/+91 9438743532</a></p>
           <p>Email: <a href="mailto:info@pathologylab.com">info@pathologylab.com</a></p>
           <small>© 2025 Pathology Lab. All rights reserved.</small>
         </div>

@@ -10,7 +10,7 @@ function LandingPage() {
         {/* Left Banner Section */}
         <div className="left-banner">
           <img
-            src="/banner.jpg"
+            src="/Page1.jpg"
             alt="Lab Posters"
             className="banner-image"
           />

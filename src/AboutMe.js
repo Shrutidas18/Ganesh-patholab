@@ -19,9 +19,17 @@ function AboutMe() {
           <b>expert lab professionals</b>, we ensure precise testing and
           reliable reports for your peace of mind.
         </p>
-        <button className="view-btn">
-          VIEW PACKAGES <span className="arrow">→</span>
-        </button>
+
+        {/* Updated Button */}
+        <a
+          href="/packages"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="view-btn">
+            VIEW PACKAGES <span className="arrow">→</span>
+          </button>
+        </a>
       </div>
 
       {/* Right Image Section */}

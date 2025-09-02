@@ -29,11 +29,11 @@ const Navbar = () => {
         <span className="icon-circle">
           <FaPhone />
         </span>
-        <span className="contact-number">091 -1111 -2222</span>
+        <span className="contact-number">+91 9861118732</span>
         <span className="icon-circle">
           <FaEnvelope />
         </span>
-        <span className="contact-email">customer.care@abc.com</span>
+        <span className="contact-email">shreeganeshpatholab99@gmail.com</span>
       </div>
 
       {/* Mobile Hamburger Icon */}
