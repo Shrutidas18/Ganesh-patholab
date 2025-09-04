@@ -4,7 +4,6 @@ import "./AboutMe.css";
 function AboutMe() {
   return (
     <div className="about-container">
-      {/* Left Text Section */}
       <div className="about-text">
         <h2 className="about-title">
           Shree Ganesh Patholab<span className="star">*</span>
@@ -20,7 +19,7 @@ function AboutMe() {
           reliable reports for your peace of mind.
         </p>
 
-        {/* Updated Button */}
+    
         <a
           href="/packages"
           target="_blank"
@@ -32,10 +31,10 @@ function AboutMe() {
         </a>
       </div>
 
-      {/* Right Image Section */}
+   
       <div className="about-image">
         <div className="circle-bg">
-          <img src="/couple.png" alt="Couple" />
+          <img src="/patholab.png" alt="Couple" />
         </div>
       </div>
     </div>

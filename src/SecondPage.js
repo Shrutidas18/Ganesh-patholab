@@ -14,7 +14,7 @@ function SecondPage() {
           marginTop: "30px",
         }}
       >
-        {/* Diabetes */}
+       
         <div style={cardStyle}>
           <img src="/diabetes.png" alt="Diabetes" style={imgStyle} />
           <p style={textStyle}>Diabetes Care</p>

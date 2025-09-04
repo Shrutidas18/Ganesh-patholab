@@ -10,7 +10,6 @@ body {
   gap: 20px;
 }
 
-/* Left Banner */
 .left-banner {
   flex: 2;
 }
@@ -18,9 +17,8 @@ body {
 .banner-image {
   width: 100%;
   border-radius: 8px;
+  display: block;
 }
-
-/* Right Booking Panel */
 .booking-section {
   flex: 1;
   background-color: #eef4fb;
@@ -44,6 +42,7 @@ body {
   border: 1px solid #ccc;
   border-right: none;
   border-radius: 5px 0 0 5px;
+  outline: none;
 }
 
 .search-btn {
@@ -71,7 +70,6 @@ body {
   font-weight: bold;
 }
 
-/* Action Buttons */
 .action-buttons {
   display: flex;
   justify-content: space-between;
@@ -81,7 +79,7 @@ body {
 
 .action-card {
   flex: 1;
-  background-color: #3B4CCA; /* Blue like LalPathLabs */
+  background-color: #3B4CCA; 
   text-align: center;
   padding: 20px 10px;
   border-radius: 8px;
@@ -91,12 +89,12 @@ body {
 }
 
 .action-card:hover {
-  background-color: #2a3799; /* darker blue hover */
+  background-color: #2a3799;
 }
 
 .action-card img {
-  width: 55px;   /* Increased from 40px */
-  height: 55px;  /* Ensure square icons */
+  width: 55px;   
+  height: 55px;  
   margin-bottom: 8px;
 }
 
@@ -104,4 +102,78 @@ body {
   margin: 0;
   font-size: 14px;
   font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;   
+    align-items: center;
+  }
+
+  .left-banner {
+    order: 1;  
+    width: 100%;
+  }
+
+  .booking-section {
+    order: 2;  
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .action-card {
+    width: 100%;  
+  }
+}
+.contact-btn {
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.contact-btn:hover {
+  background-color: #ef6c00;
+  transform: scale(1.05);
+}
+.tagline {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.tagline-icon {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bottom-image-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-grow: 1; 
+}
+
+.bottom-image {
+  max-width: 100%;
+  max-height: 250px; 
+  object-fit: contain; 
 }

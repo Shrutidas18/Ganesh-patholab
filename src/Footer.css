@@ -1,13 +1,12 @@
-/* Background */
+
 .footer-bg {
-  background-color: #3B4CCA; /* purple */
+  background-color: #3B4CCA; 
   padding: 50px 20px;
   display: flex;
   justify-content: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* White rounded card */
 .footer-card {
   background: white;
   border-radius: 20px;
@@ -20,13 +19,13 @@
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Each column */
+
 .footer-section {
   flex: 1;
   min-width: 240px;
 }
 
-/* Titles */
+
 .footer-title {
   font-size: 22px;
   font-weight: bold;
@@ -40,7 +39,7 @@
   font-weight: bold;
 }
 
-/* Links */
+
 .footer-section a {
   text-decoration: none;
   color: #5ED4C6;
@@ -50,7 +49,7 @@
   color: 5ED4C6;
 }
 
-/* List */
+
 .footer-section ul {
   list-style: none;
   padding: 0;
@@ -60,7 +59,7 @@
   margin-bottom: 8px;
 }
 
-/* Social icons */
+
 .footer-social {
   display: flex;
   gap: 15px;
@@ -75,7 +74,6 @@
   color: #5ED4C6;
 }
 
-/* Feedback Button */
 .feedback-btn {
   background-color: #5ED4C6;
   color: white;

@@ -12,22 +12,37 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Home Page */}
+      
         <Route
           path="/"
           element={
             <div>
               <Navbar />
-              <LandingPage />
-              <SecondPage />
-              <AboutMe />
-              <HealthConcerns />
-              <Footer />
+
+              
+              <div id="home">
+                <LandingPage />
+              </div>
+
+              <div id="services">
+                <SecondPage />
+              </div>
+
+              <div id="about">
+                <AboutMe />
+              </div>
+
+              <div id="contact">
+                <HealthConcerns />
+              </div>
+
+              <div id="privacy">
+                <Footer />
+              </div>
             </div>
           }
         />
 
-        {/* Packages Page */}
         <Route path="/packages" element={<Packages />} />
       </Routes>
     </Router>

@@ -1,34 +1,43 @@
 .packages-container {
-  padding: 30px;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f8ff;
+  min-height: 100vh;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 30px;
-  color: #333;
-  font-size: 28px;
+  margin-bottom: 40px;
+  color: #1a237e; 
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .package-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .package-card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-top: 5px solid #1976d2; /* blue accent */
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .package-card h2 {
-  color: #d32f2f;
+  color: #1976d2;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-weight: 600;
 }
 
 .package-card ul {
@@ -37,38 +46,65 @@ h1 {
 }
 
 .package-card li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.5;
+  color: #444;
+  padding-left: 15px;
+  position: relative;
 }
+
+.package-card li::before {
+  content: "✔";
+  color: #1976d2;
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+}
+
 .download-btn {
-  background-color: #d32f2f;
+  background-color: #1976d2;
   color: white;
   border: none;
-  padding: 12px 24px;
+  padding: 12px 28px;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 30px;
 }
 
 .download-btn:hover {
-  background-color: #b71c1c;
+  background-color: #0d47a1;
+  transform: scale(1.05);
 }
+
 .back-btn {
   position: absolute;
   top: 20px;
   left: 20px;
-  background: #007bff;
+  background: #1976d2;
   color: white;
   border: none;
-  padding: 8px 16px;
+  padding: 10px 18px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .back-btn:hover {
-  background: #0056b3;
+  background: #0d47a1;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .package-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .package-card {
+    padding: 15px;
+  }
 }
