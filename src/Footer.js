@@ -4,7 +4,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer-bg">
+    <footer id="footer" className="footer-bg">
       <div className="footer-card">
       
         <div className="footer-section">
@@ -61,7 +61,6 @@ function Footer() {
               <FaInstagram />
             </a>
           </div>
-         
         </div>
       </div>
     </footer>
