@@ -122,7 +122,7 @@ function LandingPage() {
 
   const handleWhatsApp = () => {
     const phoneNumber = "919861118732"; // replace with your WhatsApp number (with country code, no + sign)
-    const message = "Hey, I would like to book a test online";
+    const message = "Hey, I would like to book a test online!";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };

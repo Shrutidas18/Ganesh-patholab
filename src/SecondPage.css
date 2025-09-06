@@ -1,69 +1,52 @@
-.special-programs {
-  background-color: #FFF2D7;
-  padding: 50px 20px;
-  text-align: center;
-  font-family: 'Segoe UI', Arial, sans-serif;
-}
-
-.special-programs h2 {
-  color: #4B3832;
-  font-size: 28px;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-
-.programs-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-
 .program-card {
   background: linear-gradient(135deg, #004AAD, #2E8BC0);
-  border-radius: 12px;
-  padding: 20px;
-  width: 160px;
+  border-radius: 18px;
+  padding: 14px 12px;       /* less padding (taller → shorter) */
+  width: 140px;             /* smaller width */
+  min-height: 120px;        /* controls height so it doesn’t stretch square */
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: pointer;
 }
 
-.program-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
 .program-card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 12px;
-  object-fit: contain;
+  width: 55px;   /* smaller icon */
+  height: 55px;
+  margin-bottom: 8px;
 }
 
 .program-card p {
   color: #fff;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 13px;
   margin: 0;
+  line-height: 1.2; /* keeps text compact */
 }
 
-
-@media (max-width: 768px) {
+/* Tablet */
+@media (max-width: 992px) {
   .program-card {
-    width: 30%;        
-    padding: 12px;     
+    width: 28%;
+    min-height: 110px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .program-card {
+    width: 45%; 
+    min-height: 100px;
+    border-radius: 16px;
+    padding: 10px;
   }
 
   .program-card img {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
   }
 
   .program-card p {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
