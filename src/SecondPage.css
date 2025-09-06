@@ -1,9 +1,16 @@
+/* Container that wraps all program cards */
+.program-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px; /* spacing between cards */
+  justify-content: center;
+  padding: 10px;
+}
+
 .program-card {
   background: linear-gradient(135deg, #004AAD, #2E8BC0);
   border-radius: 18px;
-  padding: 14px 12px;       /* less padding (taller → shorter) */
-  width: 140px;             /* smaller width */
-  min-height: 120px;        /* controls height so it doesn’t stretch square */
+  padding: 14px 12px;
   text-align: center;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -11,7 +18,7 @@
 }
 
 .program-card img {
-  width: 55px;   /* smaller icon */
+  width: 55px;
   height: 55px;
   margin-bottom: 8px;
 }
@@ -21,22 +28,23 @@
   font-weight: 600;
   font-size: 13px;
   margin: 0;
-  line-height: 1.2; /* keeps text compact */
+  line-height: 1.2;
 }
 
 /* Tablet */
 @media (max-width: 992px) {
-  .program-card {
-    width: 28%;
-    min-height: 110px;
+  .program-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row on tablets */
   }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
+  .program-container {
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2 per row on mobile */
+  }
+
   .program-card {
-    width: 45%; 
-    min-height: 100px;
     border-radius: 16px;
     padding: 10px;
   }
